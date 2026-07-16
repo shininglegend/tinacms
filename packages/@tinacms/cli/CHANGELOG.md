@@ -1,5 +1,11 @@
 # tinacms-cli
 
+## 2.6.0
+
+### Minor Changes
+
+- [#7283](https://github.com/tinacms/tinacms/pull/7283) [`1c89c44`](https://github.com/tinacms/tinacms/commit/1c89c44f377a56e9637d719d781ba2281ff56e37) Thanks [@kulesy](https://github.com/kulesy)! - `tinacms dev` and `tinacms build` now warn at startup when the `tinacms`, `@tinacms/graphql`, or `@tinacms/schema-tools` versions resolved from the project don't satisfy the ranges the CLI was published with, or when two different copies of `tinacms` are installed. A held-back package (stale lockfile entry, partial upgrade, pnpm `minimumReleaseAge`) previously failed silently: the admin built fine but served an older `tinacms` where newer documented features were missing.
+
 ## 2.5.6
 
 ### Patch Changes
